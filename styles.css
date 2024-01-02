@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #000;
-    color: #A67FF7;
+    color: #8BB2D9  ;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -25,7 +25,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #A67FF7;
+    color: #8BB2D9;
     position: relative;
 }
 
@@ -36,7 +36,7 @@ nav ul li a:before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, #A67FF7, #fff);
+    background: linear-gradient(to right, #8BB2D9, #fff);
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;
@@ -71,11 +71,11 @@ footer {
 
 .social-links a {
     text-decoration: none;
-    color: #A67FF7;
+    color: #8BB2D9;
     font-weight: bold;
     display: inline-block;
     padding: 8px 16px;
-    border: 2px solid #9370DB;
+    border: 2px solid #8BB2D9;
     border-radius: 5px;
     margin-right: 10px;
     transition: color 0.3s, background-color 0.3s;
@@ -83,7 +83,7 @@ footer {
 
 .social-links a:hover {
     color: #fff;
-    background-color: #A67FF7;
+    background-color: #8BB2D9;
 }
 
 img {
@@ -111,4 +111,12 @@ button {
 .unhinged{
   font-size: 30vh;
   text-align: center;
+}
+
+.spacingsinceimstupid{
+   margin: 4;
+}
+
+.center{
+    text-align: center;
 }
