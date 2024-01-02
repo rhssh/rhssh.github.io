@@ -1,4 +1,4 @@
-body {
+body {  /* top header coloring and bg */
     font-family: 'Poppins', sans-serif;
     background-color: #000;
     color: #8BB2D9  ;
@@ -7,29 +7,29 @@ body {
     min-height: 100vh;
 }
 
-header {
+header { /* center heading */
     padding: 20px;
     text-align: center;
 }
 
-nav ul {
+nav ul { /* navigation */
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+nav ul li { /* idk myself i copied this from stackoverflow*/
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
+nav ul li a { /* navigation color */
     text-decoration: none;
     color: #8BB2D9;
     position: relative;
 }
 
-nav ul li a:before {
+nav ul li a:before { /* the gradient */
     content: "";
     position: absolute;
     width: 100%;
@@ -42,25 +42,25 @@ nav ul li a:before {
     transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:hover:before {
+nav ul li a:hover:before { /* makes that the gradient is visible when hovering */
     visibility: visible;
     transform: scaleX(1);
 }
 
-.content {
+.content { /* main body color */
     flex: 1;
     padding: 20px;
     color: #ffffff;
 }
 
-footer {
+footer { /* footer */
     padding: 10px;
     text-align: center;
     margin-top: auto;
 }
 
 
-.social-links {
+.social-links { /* social links */
     list-style-type: none;
     padding: 0;
 }
@@ -69,7 +69,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.social-links a {
+.social-links a { /*  coloring  */
     text-decoration: none;
     color: #8BB2D9;
     font-weight: bold;
@@ -81,23 +81,23 @@ footer {
     transition: color 0.3s, background-color 0.3s;
 }
 
-.social-links a:hover {
+.social-links a:hover { /* color change when hover */
     color: #fff;
     background-color: #8BB2D9;
 }
 
-img {
+img { 
     padding: 20px;
     align-items: center;
 }
 
-button {
+button { /* btn font */
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
 
-.parent {
+.parent { /* to make glorb center */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,3 +120,27 @@ button {
 .center{
     text-align: center;
 }
+
+.simg{
+    width: 350px;
+    height: auto;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #movingImg {
+    position: absolute;
+    width: 350px;
+    height: auto;
+  }
+  
