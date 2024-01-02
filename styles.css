@@ -140,7 +140,11 @@ body, html {
   
   #movingImg {
     position: absolute;
-    width: 350px;
+    width: 250px;
     height: auto;
+  }
+  
+  #hideButton {
+    margin-top: 10px;
   }
   

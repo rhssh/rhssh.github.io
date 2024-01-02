@@ -1,6 +1,6 @@
 const movingImg = document.getElementById('movingImg');
 
-let speedX = 5;
+let speedX = 5; // Adjust the speed as needed
 let speedY = 5;
 let directionX = 1;
 let directionY = 1;
