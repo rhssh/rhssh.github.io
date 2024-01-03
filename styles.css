@@ -60,16 +60,18 @@ footer { /* footer */
 }
 
 
-.social-links { /* social links */
+.social-links {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .social-links li {
     margin-bottom: 10px;
 }
 
-.social-links a { /*  coloring  */
+.social-links a {
     text-decoration: none;
     color: #8BB2D9;
     font-weight: bold;
@@ -149,8 +151,59 @@ body, html {
   }
   
   .bier{
-    font-size: larger;
+    font-size: 30px;
   }
   .bier2{
     font-size: large;
   }
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.description-section {
+    position: relative;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border: 2px solid #8BB2D9; 
+}
+
+.text-container {
+    flex: 1;
+}
+
+h2 {
+    color: #8BB2D9;
+}
+
+p {
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.glow-center::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 20px rgba(139, 178, 217, 0.7);
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.spacingsinceimstupid {
+    flex: 1;
+}
