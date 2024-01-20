@@ -4,7 +4,13 @@ body {  /* top header coloring and bg */
     color: #8BB2D9  ;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+body > *{
+    backdrop-filter: blur(3px);
 }
 
 header { /* center heading */
@@ -59,14 +65,6 @@ footer { /* footer */
     margin-top: auto;
 }
 
-
-.social-links {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
 .social-links li {
     margin-bottom: 10px;
 }
@@ -86,11 +84,6 @@ footer { /* footer */
 .social-links a:hover { /* color change when hover */
     color: #fff;
     background-color: #8BB2D9;
-}
-
-img { 
-    padding: 20px;
-    align-items: center;
 }
 
 button { /* btn font */
@@ -162,6 +155,7 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
 }
 
 .description-section {
@@ -206,4 +200,87 @@ p {
 
 .spacingsinceimstupid {
     flex: 1;
+}
+
+.contact{
+    cursor: pointer;
+    position: relative;
+}
+
+#discords {
+    position: absolute;
+    font-size: 15px;
+    transform: translateY(-35px);
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5% 7%;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+#discords.focused {
+    position: absolute;
+    font-size: 15px;
+    transform: translateY(-35px);
+    color: #fff;
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 5% 7%;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+#backpic {
+    z-index: -1;
+    position: absolute;
+    /* background-color: #000; */
+    width: 100vw;
+    height: 100vh;
+}
+  
+#backpic > img {
+    z-index: -1;
+    width: 5vw;
+    object-fit: cover;
+    position: absolute;
+    outline: none;
+    /* filter: invert(100%) saturate(100%) invert(0%) sepia(0%) saturate(7484%) hue-rotate(0deg) brightness(112%) contrast(100%); */
+}
+
+#lightning{
+    border-radius: max(100vh, 100vw);
+    background: radial-gradient(circle, rgba(240, 248, 255, 0.3) 5%, rgba(0, 0, 0, 0) 70%);
+    z-index: -2;
+    height: min(30vh, 30vw);
+    width: min(30vh, 30vw);
+    position: absolute;
+}
+
+
+@media (orientation: portrait) {
+    .social-links {
+        list-style-type: none;
+        padding: 0;
+        display: grid;
+        grid-template-rows: auto auto; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        justify-content: center;
+    }
+
+    #backpic {
+        display: none;
+    }
+
+    #lightning {
+        display: none;
+    }
+}
+
+@media (orientation: landscape) {
+    .social-links {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
 }
