@@ -7,6 +7,8 @@ body {  /* top header coloring and bg */
     height: 100vh;
     width: 100vw;
     position: relative;
+    user-select: none;
+    user-zoom: none;
 }
 
 body > *{
@@ -98,6 +100,8 @@ button { /* btn font */
     align-items: center;
     height: 50vh;
 }
+
+
 
 .gleeb {
     color: #00FF00;
