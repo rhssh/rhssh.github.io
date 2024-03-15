@@ -37,7 +37,7 @@ window.addEventListener("load", (el) => {
                     break;
 
                 case "discord":
-                    navigator.clipboard.writeText("al3r");
+                    navigator.clipboard.writeText("t1nklas");
                     document.getElementById("discords").classList.add("focused");
                     setTimeout(function() {
                         document.getElementById("discords").classList.remove("focused");
